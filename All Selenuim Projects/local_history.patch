@@ -1,0 +1,28 @@
+Index: src/main/java/initialization/Setup.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/initialization/Setup.java	(date 1556918585000)
++++ src/main/java/initialization/Setup.java	(date 1556918585000)
+@@ -8,17 +8,13 @@
+     public static void main(String[] args) {
+ 
+         System.setProperty("webdriver.chrome.driver","/Users/user/Documents/All Selenuim Projects/src/main/resources/Driver/chromedriver");
++
+         WebDriver driver = new ChromeDriver();
+-
+-
+-
+-
+-        
+         driver.get("https://www.facebook.com");
+         //driver.findElement(By.xpath("//*[@class='gLFyf gsfi']")).sendKeys("Selenuim books");
+         driver.findElement(By.xpath("//*[@id='email']")).sendKeys("akli ");
+-        driver.findElement(By.xpath("//*[@name='pass']")).sendKeys("password");
+-        driver.findElement(By.xpath("//*[@aria-label='Log In']")).click();
++        driver.findElement(By.xpath("//*[@id='email']")).sendKeys("password");
++        driver.findElement(By.xpath()).click();
+ 
+ 
+ 
